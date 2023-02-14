@@ -1,24 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FrontEnd Test</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="app">
-        <div id="header">
+        <!-- SIDEBAR -->
+      <div id="sidebar">
+        <div id="nav">
+          <li class="nav__item">
+            <a class="nav__link activate" href="#">Home</a>
+          </li>
 
+          <li class="nav__item">
+            <a class="nav__link" href="#">Services</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">News</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Blog</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">Contact</a>
+          </li>
+
+          <li id="close-btn" class="nav__item">
+            <i class="fa-sharp fa-regular fa-circle-xmark"></i>
+          </li>
         </div>
 
+        <!--Mobile-Menu btn -->
+        <div id="mobile-menu" class="mobile-menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- MAIN include CONTENT & FOOTER -->
+      <div id="main">
+        <!-- CONTENT -->
         <div id="content">
+          <div class="container">
+            <div class="content__heading">
+              <img
+                class="content__heading-img"
+                src="./assets/images/logoNCC.png"
+                alt="Logo NCC"
+              />
+            </div>
 
+            <div class="content__title">
+              <div class="content__title-name">
+                Lorem ipsum dolor sit asmet?
+              </div>
+              <div class="content__title-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                tristique consequat placerat. Vestibulum auctor pellentesque
+                sem, eu posuere erat hendrerit quis. Maecenas vel consequat
+                turpis. Nam facilisis, ligula in mattis sodales, augue justo
+                tristique nulla, sed lacinia ante eros ut mi. Morbi vitae diam
+                augue. Aliquam vel mauris a nibh auctor commodo. Praesent et
+                nisi eu justo eleifend convallis. Quisque suscipit maximus
+                vestibulum. Phasellus congue mollis orci, sit amet luctus augue
+                tristique eu. Donec vulputate odio neque, sed semper turpis
+                pellentesque a.
+              </div>
+            </div>
+
+            <div class="row element-list">
+              <div class="col col-third s-col-ful mt-40 bb-1">
+                <p class="element-item__name">Lorem ipsum dolor sit amet</p>
+                <img
+                  class="element-item__img"
+                  src="./assets/images/css.png"
+                  alt="CSS Element image"
+                />
+                <p class="element-item__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  non dui sodales, faucibus libero ut, posuere felis. Donec
+                  imperdiet suscipit accumsan. Aenean consequat condimentum
+                  velit ut tempor. Nam porta massa in metus bibendum congue.
+                  Pellentesque ultrices liquam egestas nunc at ullamcorper
+                  ultricies. Donec feugiat velit nulla, vel sodales est
+                  ullamcorper id. Aenean consequat condimentum velit ut tempor.
+                  Nam porta massa in metus bibendum congue. Pellentesque
+                  ultrices vestibulum mattis.
+                </p>
+              </div>
+              <div class="col col-third s-col-ful mt-40 bb-1">
+                <p class="element-item__name">Lorem ipsum dolor sit amet</p>
+                <img
+                  class="element-item__img"
+                  src="./assets/images/html.png"
+                  alt="CSS Element image"
+                />
+                <p class="element-item__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  non dui sodales, faucibus libero ut, posuere felis. Donec
+                  imperdiet suscipit accumsan. Aenean consequat condimentum
+                  velit ut tempor. Nam porta massa in metus bibendum congue.
+                  Pellentesque ultrices liquam egestas nunc at ullamcorper
+                  ultricies. Donec feugiat velit nulla, vel sodales est
+                  ullamcorper id. Aenean consequat condimentum velit ut tempor.
+                  Nam porta massa in metus bibendum congue. Pellentesque
+                  ultrices vestibulum mattis.
+                </p>
+              </div>
+              <div class="col col-third s-col-ful mt-40">
+                <p class="element-item__name">Lorem ipsum dolor sit amet</p>
+                <img
+                  class="element-item__img"
+                  src="./assets/images/url.png"
+                  alt="CSS Element image"
+                />
+                <p class="element-item__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  non dui sodales, faucibus libero ut, posuere felis. Donec
+                  imperdiet suscipit accumsan. Aenean consequat condimentum
+                  velit ut tempor. Nam porta massa in metus bibendum congue.
+                  Pellentesque ultrices liquam egestas nunc at ullamcorper
+                  ultricies. Donec feugiat velit nulla, vel sodales est
+                  ullamcorper id. Aenean consequat condimentum velit ut tempor.
+                  Nam porta massa in metus bibendum congue. Pellentesque
+                  ultrices vestibulum mattis.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <!-- FOOTER -->
         <div id="footer">
-            
+          <div class="container footer__wrap">
+            <div class="footer__text">Copyright © 2021</div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+
+    <script>
+      var sidebar = document.getElementById("sidebar");
+      var content = document.getElementById("content");
+      var footer = document.getElementById("footer");
+      var main = document.getElementById("main");
+      var mobileMenu = document.getElementById("mobile-menu");
+      var navbar = document.getElementById("nav");
+      var closeBtn = document.getElementById("close-btn");
+
+      /*Handle event when open navbar in mobile and tablet*/
+      mobileMenu.onclick = function () {
+        sidebar.style.height = "263px";
+        sidebar.style.position = "absolute";
+        sidebar.style.zIndex = "2";
+        navbar.style.opacity = "0.9";
+        navbar.style.display = "block";
+        mobileMenu.style.display = "none";
+        closeBtn.style.display = "block";
+        main.style.width = "calc(100vw - 60px)";
+        main.style.marginLeft = '41px';
+      };
+
+      /*Handle event when close navbar in mobile and tablet*/
+      closeBtn.onclick = function () {
+        navbar.style.display = "none";
+        sidebar.style.position = "sticky";
+        mobileMenu.style.display = "block";
+        main.style.width = "calc(100vw - 100px)";
+        main.style.marginLeft = '0px';
+      };
+    </script>
+  </body>
 </html>

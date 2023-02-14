@@ -1,0 +1,62 @@
+/*Common css configuration for the whole app*/
+
+/* Reset CSS  !Compulsory */
+:root {
+    --white-color: #fff;
+    --border-color: #5C5C5C;
+    --background-color: #191718;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+/*Container's Element*/
+.container{
+    width: 100%;
+    max-width: 1510px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-third{
+    width: calc(1/3 * 100%);
+}
+
+.mt-40 {
+    margin-top: 40px!important;
+}

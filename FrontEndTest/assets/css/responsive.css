@@ -1,0 +1,49 @@
+/*Config css for responsive section*/
+
+/*Tablet & Mobile*/
+@media (max-width:63.9375em) {
+    #nav { 
+        display: none;
+    }
+    #sidebar {
+        position: sticky;
+        background-color: #fff;
+        top: 15px;
+        height: 50px;
+    }
+    .mobile-menu-btn {
+        display: block;
+        cursor: pointer;
+        margin-left: 15px;
+        font-size: 3rem;
+    }
+
+    .s-col-ful {
+        width: 100% !important;
+    }
+
+    .element-item__wrap {
+        display: block;
+    }
+
+    #content, #footer {
+        width: calc(100vw - 100px);
+    }
+
+    #footer {
+        position: relative;
+        margin-top: 40px;
+    }
+
+    .bb-1 {
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .content__title-desc {
+        padding: 0 20px;
+    }
+    
+    .content__heading-img {
+        width: 200px;
+    }
+}

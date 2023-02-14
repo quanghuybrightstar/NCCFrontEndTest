@@ -1,0 +1,142 @@
+
+/*APP*/
+.app {
+    display: inline-flex;
+    position: relative;
+}
+
+
+/*SIDEBAR*/
+#sidebar {
+    text-decoration: none;
+    display: flex;
+    background-color:var(--background-color);
+    height: calc(100vh);
+}
+
+    /*Navbar*/
+#nav {
+    flex-direction: column;
+    width: 150px;
+    height: 100%;  
+    background-color:var(--background-color);
+}
+
+.nav__item {
+    border-bottom: 1px solid var(--border-color);  
+    height: 44px;
+}
+.nav__item:hover {
+    background-color: var(--border-color);
+    cursor: pointer;
+}
+.nav__item:hover .nav__link {
+    color: #FFF;
+}
+.nav__item .activate {
+    color: #FFF;
+}
+
+.nav__link {
+    margin-left: 16px;
+    color: #AAA;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 4.4rem;
+}
+
+#close-btn {
+    padding-left: 12px;
+    font-size: 2.5rem;
+    display: none;
+    line-height: 4.4rem;
+    color: #999;
+}
+#close-btn:hover {
+    color: red;
+}
+
+    /*Mobile Menu*/
+.mobile-menu-btn {
+    display: none;
+}
+
+/*MAIN*/
+#main {
+    position: relative;
+    height: 100%;
+}
+
+/*CONTENT*/
+#content {
+    width: calc(100vw - 150px);
+    text-align: center;
+}
+
+    /*Content Heading*/
+.content__heading {
+    margin-top: 20px;
+}
+.content__heading-img {
+    width: 310px;
+}
+
+    /*Content Title*/
+.content__title {
+    background-color: #EFEFEF;
+    margin-top: 30px;
+    padding: 38px 0;
+}
+.content__title-name {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    font-weight: 700;
+}
+.content__title-desc {
+    font-weight: 400;
+    max-width: 972px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+}
+    /*Content Element*/
+.element-list {
+    text-align: left;
+    position: relative;
+}
+
+.element-item__name {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+.element-item__img {
+    width: 128px;
+    height: 128px;
+    margin-right: 16px;
+    float: left;
+}
+
+.element-item__desc {
+    font-size: 1.6rem;
+    font-weight: 400;
+}   
+
+/*FOOTER*/
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: calc(100vw - 150px);
+    border-top: 1px solid #DEDEDE;
+    padding: 10px 0;
+}
+
+.footer__text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875;
+}
+
